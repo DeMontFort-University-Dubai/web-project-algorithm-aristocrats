@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Montfort University</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>DE MONTFORT</h1>
+        </div>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Courses</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="undergraduate.html">Undergraduate</a></li>
+                        <li><a href="postgraduate.html">Postgraduate</a></li>
+                    </ul>
+                </li>
+                <li><a href="study.html">Study</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li class="dropdown">
+                    <a href="#">Sign In <i class="fas fa-user"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="admin login.html">Admin</a></li>
+                        <li><a href="faculty-signin.html">Staff</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Slideshow Container -->
+        <div class="slideshow-container">
+            <div class="slides">
+                <img class="slide-image" src="images/uni.jpg" alt="Slide 1">
+            </div>
+            <div class="slides">
+                <img class="slide-image" src="images/download.jpeg" alt="Slide 2">
+            </div>
+            <div class="slides">
+                <img class="slide-image" src="images/63c22334d3e27ebe95848bc7_63a3690b52bfb2fcb136c888_1820(1).webp" alt="Slide 3">
+            </div>
+        </div>
+
+        <!-- Text and Course Selection -->
+        <div class="hero-text">
+            <h2>Open Day: 29 March</h2>
+            <p>Discover what you're made of!</p>
+            <div class="search-bar">
+                <input type="text" id="course-search" placeholder="Find your course...">
+                <select id="level-select">
+                    <option value="">Select a level of study...</option>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="postgraduate">Postgraduate</option>
+                </select>
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
+
+        <section class="open-day-info">
+            <h3>Preparing to Attend a DMU Open Day?</h3>
+            <p>We’ve got you covered! Get ready to experience what DMU has to offer.</p>
+            <div class="booking-form">
+                <h4>Register below to get email updates, direct information, and keep yourself informed about all our exciting events!</h4>
+                <form method="POST" action="register.php">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="tel" name="phone" placeholder="Enter your phone number" required>
+                    
+                    <select name="gender" required>
+                        <option value="">Select your gender...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                
+                    <button type="submit" class="btn-book">Register Now</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Course Cards Section -->
+        <section class="course-cards"></section> <!-- Added container for course cards -->
+
+        <!-- Course Table Section -->
+        <div class="course-table"></div> <!-- Added container for course table -->
+    </main>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.querySelectorAll(".slides");
+            slides.forEach((slide, index) => {
+                slide.style.display = "none";  // Hide all slides
+            });
+            
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            
+            slides[slideIndex - 1].style.display = "block";  // Show the current slide
+        }
+
+        // Call the function every 3 seconds
+        setInterval(showSlides, 3000);
+
+        // Initialize the first slide
+        showSlides();
+
+        // Search button click event
+        document.getElementById('search-btn').addEventListener('click', function() {
+            var keyword = document.getElementById('course-search').value.trim().toLowerCase(); // Get the search keyword and convert it to lowercase
+            var level = document.getElementById('level-select').value; // Get the selected level
+
+            // Check if the level is selected and keyword is provided
+            if (keyword === '') {
+                alert('Please enter a course name to search!');
+                return;
+            }
+
+            if (level === '') {
+                alert('Please select a level of study first!');
+                return;
+            }
+
+            // Based on the level selected and the keyword, navigate to the course page
+            var coursePage = '';
+            if (level === 'undergraduate') {
+                if (keyword === 'cyber security' || keyword === 'cyber') {
+                    coursePage = 'cyber-security.html';
+                } else if (keyword === 'computer science' || keyword === 'computer') {
+                    coursePage = 'computer-science.html';
+                }
+                // Add more course redirects for undergraduate here
+            } else if (level === 'postgraduate') {
+                if (keyword === 'cyber security' || keyword === 'cyber') {
+                    coursePage = 'Pcyber-security.html';
+                } else if (keyword === 'computer science' || keyword === 'computer') {
+                    coursePage = 'Pcomputer-science.html';
+                }
+                // Add more course redirects for postgraduate here
+            }
+
+            // If a corresponding course page exists, redirect to that page
+            if (coursePage) {
+                window.location.href = coursePage;
+
+                // Clear the search input and level after redirect
+                document.getElementById('course-search').value = '';
+                document.getElementById('level-select').value = '';
+            } else {
+                alert('No courses found for your search.');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science (MSc) - Study Plan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>DE MONTFORT</h1>
+        </div>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Courses</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="undergraduate.html">Undergraduate</a></li>
+                        <li><a href="postgraduate.html">Postgraduate</a></li>
+                    </ul>
+                </li>
+                <li><a href="study.html">Study</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li class="dropdown">
+                    <a href="#">Sign In <i class="fas fa-user"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="admin login.html">Admin</a></li>
+                        <li><a href="faculty-signin.html">Staff</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="university-header3"></div>
+
+    <div class="bottom-left">
+        <div class="degree">
+            <span class="computer">COMPUTER</span>
+            <span class="science">SCIENCE</span>
+            <span class="msc">MSc (Hons)</span>
+        </div>
+    </div>
+
+    <div class="bottom-right">
+        <div class="university-description">
+            CONCENTRATES ON THE LATEST TOOLS AND TECHNIQUES OF MODERN COMPUTER SCIENCE, 
+            SO YOU CAN DEVELOP THE RELEVANT PRACTICAL SKILLS AND SPECIALIST UNDERSTANDING 
+            NEEDED FOR A CAREER IN THE COMPUTER INDUSTRY
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>What will you study</h1>
+        <div class="Pyear-container">
+            <label for="year1" class="Pyear">Year 1</label>
+            <input type="checkbox" id="year1" name="year">
+            <div class="Pblocks">
+                <div class="Pmodule">Block 1: Business Analysis & Modelling</div>
+                <div class="Pmodule">Block 2: Enterprise Architecture</div>
+                <div class="Pmodule">Block 3: Digital Commerce</div>
+                <div class="Pmodule">Block 4: Human Factors, Research and Skills</div>
+                <div class="Pmodule">Block 5 & 6: PGT Project</div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="faculty-heading">Our Faculty</h2>
+    <div class="faculty-container">
+        <div class="faculty-member">
+            <input type="checkbox" id="faculty1" class="faculty-checkbox">
+            <label for="faculty1" class="faculty-info">
+                <img src="images/profile.png" alt="Syed Shah" class="faculty-image">
+                <div>
+                    <div class="faculty-name">Syed Shah</div>
+                    <div class="faculty-role">Senior Lecturer</div>
+                </div>
+                <span class="dropdown-arrow">▼</span>
+            </label>
+            <div class="faculty-modules">
+                <div class="module"><strong>Block 1</strong>: Business Analysis & Modelling</div>
+                <div class="module"><strong>Block 2</strong>: Enterprise Architecture</div>
+                <div class="module"><strong>Block 3</strong>: Digital Commerce</div>
+            </div>
+        </div>
+
+        <div class="faculty-member">
+            <input type="checkbox" id="faculty2" class="faculty-checkbox">
+            <label for="faculty2" class="faculty-info">
+                <img src="images/profile.png" alt="Atheer Al-Mousa" class="faculty-image">
+                <div>
+                    <div class="faculty-name">Atheer Al-Mousa</div>
+                    <div class="faculty-role">Program Leader</div>
+                </div>
+                <span class="dropdown-arrow">▼</span>
+            </label>
+            <div class="faculty-modules">
+                <div class="module"><strong>Block 4</strong>: Human Factors, Research and Skills</div>
+                <div class="module"><strong>Block 5 & 6</strong>: PGT Project</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

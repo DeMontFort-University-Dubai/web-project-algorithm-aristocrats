@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undergraduate Courses - De Montfort University</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="logo">
+            <h1>DE MONTFORT</h1>
+        </div>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="index.html" tabindex="0">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" tabindex="0" aria-haspopup="true" aria-expanded="false">Courses</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="undergraduate.html" tabindex="0" role="menuitem">Undergraduate</a></li>
+                        <li><a href="postgraduate.html" tabindex="0" role="menuitem">Postgraduate</a></li>
+                    </ul>
+                </li>
+                <li><a href="study.html" tabindex="0">Study</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li class="dropdown">
+                    <a href="#" tabindex="0" aria-haspopup="true" aria-expanded="false">Sign In <i class="fas fa-user" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="admin login.html" tabindex="0" role="menuitem">Admin</a></li>
+                        <li><a href="faculty-signin.html" tabindex="0" role="menuitem">Staff</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Undergraduate Courses Page Content -->
+    <main id="main-content">
+        <div class="undergraduate-courses">
+            <h2>Undergraduate courses at De Montfort University</h2>
+            <p>
+                Put together with continual input from leading employers, DMU’s undergraduate courses are designed with employability in mind and provide the professional skills and practical experience businesses are looking for.
+            </p>
+
+            <!-- Custom Table with ARIA roles -->
+            <div class="course-table" role="table" aria-label="Undergraduate Courses List">
+                <div class="row header-row" role="row">
+                    <span role="columnheader">Course/Programme</span>
+                    <span role="columnheader">Award</span>
+                    <span role="columnheader">Study option</span>
+                </div>
+                <div class="separator"></div>
+                <!-- Dynamic rows will be added here by JavaScript -->
+            </div>
+        </div>
+        <section class="course-cards" aria-label="Undergraduate Course Details">
+            <!-- Dynamic cards will be added here by JavaScript -->
+        </section>
+    </main>
+
+    <!-- External script.js -->
+    <script src="script.js" defer></script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'924732aef914dd25',t:'MTc0MjY2MjMzMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

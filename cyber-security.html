@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security - Study Plan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>DE MONTFORT</h1>
+        </div>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Courses</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="undergraduate.html">Undergraduate</a></li>
+                        <li><a href="postgraduate.html">Postgraduate</a></li>
+                    </ul>
+                </li>
+                <li><a href="study.html">Study</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li class="dropdown">
+                    <a href="#">Sign In <i class="fas fa-user"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="admin login.html">Admin</a></li>
+                        <li><a href="faculty-signin.html">Staff</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- University Header with Background Image -->
+    <div class="university-header2"></div>
+
+    <!-- Bottom-left content -->
+    <div class="bottom-left">
+        <div class="degree">
+            <span class="cyber">CYBER</span>
+            <span class="security">SECURITY</span>
+            <span class="bsc">BSc (Hons)</span>
+        </div>
+    </div>
+
+    <!-- Bottom-right content -->
+    <div class="bottom-right">
+        <div class="university-description">
+            LEARN HOW TO PROTECT OUR SOCIETY, ECONOMY, NATIONAL
+            SECURITY, AND INFRASTRUCTURE AGAINST CYBERCRIME AND PREPARE FOR A FULFILLING 
+            CAREER IN THE RAPIDLY-GROWING CYBER SECURITY INDUSTRY
+        </div>
+    </div>
+
+    <!-- What will you study -->
+    <div class="container">
+        <h1>What will you study</h1>
+
+        <!-- Year 1 -->
+        <div class="year-container">
+            <label for="year1" class="year">Year 1</label>
+            <input type="checkbox" id="year1" name="year">
+            <div class="blocks">
+                <div class="module">Block 1: Foundation of Computing and Cyber Security</div>
+                <div class="module">Block 2: Secure Coding</div>
+                <div class="module">Block 3: Endpoint Security</div>
+                <div class="module">Block 4: Business Infrastructure and Security</div>
+            </div>
+        </div>
+
+        <!-- Year 2 -->
+        <div class="year-container">
+            <label for="year2" class="year">Year 2</label>
+            <input type="checkbox" id="year2" name="year">
+            <div class="blocks">
+                <div class="module">Block 1: Secure Scripting and Business Applications</div>
+                <div class="module">Block 2: Incident Response and Cyber Threat Intelligence</div>
+                <div class="module">Block 3: Penetration Testing</div>
+                <div class="module">Block 4: Industrial Cryptography</div>
+            </div>
+        </div>
+
+        <!-- Year 3 -->
+        <div class="year-container">
+            <label for="year3" class="year">Year 3</label>
+            <input type="checkbox" id="year3" name="year">
+            <div class="blocks">
+                <div class="module">Block 1: Cyber Physical Systems Security</div>
+                <div class="module">Block 2: Malware and Attacker Techniques</div>
+                <div class="module">Block 3: Cyber Security and Social Responsibility</div>
+                <div class="module">Block 4: Artificial Intelligence for Cyber Security</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Faculty Section -->
+    <h2 class="faculty-heading">Our Faculty</h2>
+    <div class="faculty-container">
+        <!-- First Faculty Member -->
+        <div class="faculty-member">
+            <input type="checkbox" id="faculty1" class="faculty-checkbox">
+            <label for="faculty1" class="faculty-info">
+                <img src="images/profile.png" alt="Syed Shah" class="faculty-image">
+                <div>
+                    <div class="faculty-name">Syed Shah</div>
+                    <div class="faculty-role">Senior Lecturer</div>
+                </div>
+                <span class="dropdown-arrow">▼</span>
+            </label>
+            <div class="faculty-modules">
+                <div class="module"><strong>Year 1</strong>: <strong>Block 1</strong> Foundation of Computing and Cyber Security & <strong>Block 2</strong> Secure Coding</div>
+                <div class="module"><strong>Year 2</strong>: <strong>Block 3</strong> Penetration Testing & <strong>Block 4</strong> Industrial Cryptography</div>
+                <div class="module"><strong>Year 3</strong>: <strong>Block 1</strong> Cyber Physical Systems Security & <strong>Block 3</strong> Cyber Security and Social Responsibility</div>
+            </div>
+        </div>
+
+        <!-- Second Faculty Member -->
+        <div class="faculty-member">
+            <input type="checkbox" id="faculty2" class="faculty-checkbox">
+            <label for="faculty2" class="faculty-info">
+                <img src="images/profile.png" alt="Sumaiya Thaseen" class="faculty-image">
+                <div>
+                    <div class="faculty-name">Sumaiya Thaseen</div>
+                    <div class="faculty-role">Senior Lecturer</div>
+                </div>
+                <span class="dropdown-arrow">▼</span>
+            </label>
+            <div class="faculty-modules">
+                <div class="module"><strong>Year 1</strong>: <strong>Block 3</strong> Endpoint Security & <strong>Block 4</strong> Business Infrastructure and Security</div>
+                <div class="module"><strong>Year 2</strong>: <strong>Block 1</strong> Secure Scripting and Business Applications & <strong>Block 2</strong> Incident Response and Cyber Threat Intelligence</div>
+                <div class="module"><strong>Year 3</strong>: <strong>Block 2</strong> Malware and Attacker Techniques & <strong>Block 4</strong> Artificial Intelligence for Cyber Security</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

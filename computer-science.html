@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science - Study Plan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>DE MONTFORT</h1>
+        </div>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Courses</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="undergraduate.html">Undergraduate</a></li>
+                        <li><a href="postgraduate.html">Postgraduate</a></li>
+                    </ul>
+                </li>
+                <li><a href="study.html">Study</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li class="dropdown">
+                    <a href="#">Sign In <i class="fas fa-user"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="adminlogin.html">Admin</a></li>
+                        <li><a href="faculty-signin.html">Staff</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- University Header with Background Image -->
+    <div class="university-header"></div>
+
+    <!-- Bottom-left content -->
+    <div class="bottom-left">
+        <div class="degree">
+            <span class="computer">COMPUTER</span>
+            <span class="science">SCIENCE</span>
+            <span class="bsc">BSc (Hons)</span>
+        </div>
+    </div>
+
+    <!-- Bottom-right content -->
+    <div class="bottom-right">
+        <div class="university-description">
+            GAIN A FIRM FOUNDATION IN THE PRACTICE AND THEORY OF CORE
+            COMPUTING PRINCIPLES, WITH A FOCUS ON SOFTWARE DEVELOPMENT
+        </div>
+    </div>
+
+    <!-- What will you study -->
+    <div class="container">
+        <h1>What will you study</h1>
+
+        <!-- Year 1 -->
+        <div class="year-container">
+            <label for="year1" class="year">Year 1</label>
+            <input type="checkbox" id="year1" name="year">
+            <div class="blocks">
+                <div class="module">Block 1: Database Design and Implementation</div>
+                <div class="module">Block 2: Fundamental Concepts of Computer Science</div>
+                <div class="module">Block 3: Computer Programming</div>
+                <div class="module">Block 4: Operating Systems and Networks</div>
+            </div>
+        </div>
+
+        <!-- Year 2 -->
+        <div class="year-container">
+            <label for="year2" class="year">Year 2</label>
+            <input type="checkbox" id="year2" name="year">
+            <div class="blocks">
+                <div class="module">Block 1: Object Oriented Design and Development</div>
+                <div class="module">Block 2: Data Structure and Algorithms</div>
+                <div class="module">Block 3: Web Application Development</div>
+                <div class="module">Block 4: Agile Development Team Project</div>
+            </div>
+        </div>
+
+        <!-- Year 3 -->
+        <div class="year-container">
+            <label for="year3" class="year">Year 3</label>
+            <input type="checkbox" id="year3" name="year">
+            <div class="blocks">
+                <div class="module">Block 1: Software Development: Methods and Standards</div>
+                <div class="module">Block 2: Big Data and Machine Learning</div>
+                <div class="module">Block 3: Development Project</div>
+                <div class="module">Block 4: Functional Programming</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Faculty Section -->
+    <h2 class="faculty-heading">Our Faculty</h2>
+    <div class="faculty-container">
+        <!-- First Faculty Member -->
+        <div class="faculty-member">
+            <input type="checkbox" id="faculty1" class="faculty-checkbox">
+            <label for="faculty1" class="faculty-info">
+                <img src="images/profile.png" alt="Syed Ahmad" class="faculty-image">
+                <div>
+                    <div class="faculty-name">Syed Ahmad</div>
+                    <div class="faculty-role">Program Leader - Computer Science</div>
+                </div>
+                <span class="dropdown-arrow">▼</span>
+            </label>
+            <div class="faculty-modules">
+                <div class="module">Year 1: <strong>Block 1</strong> Database Design and Implementation & <strong>Block 2</strong> Fundamental Concepts of Computer Science</div>
+                <div class="module">Year 2: <strong>Block 3</strong> Web Application Development & <strong>Block 4</strong> Agile Development Team Project</div>
+                <div class="module">Year 3: <strong>Block 1</strong> Software Development: Methods and Standards & <strong>Block 3</strong> Development Project</div>
+            </div>
+        </div>
+
+        <!-- Second Faculty Member -->
+        <div class="faculty-member">
+            <input type="checkbox" id="faculty2" class="faculty-checkbox">
+            <label for="faculty2" class="faculty-info">
+                <img src="images/profile.png" alt="Muhammad Ghalib" class="faculty-image">
+                <div>
+                    <div class="faculty-name">Muhammad Ghalib</div>
+                    <div class="faculty-role">Senior Lecturer</div>
+                </div>
+                <span class="dropdown-arrow">▼</span>
+            </label>
+            <div class="faculty-modules">
+                <div class="module">Year 1: <strong>Block 3</strong> Computer Programming & <strong>Block 4</strong> Operating Systems and Networks</div>
+                <div class="module">Year 2: <strong>Block 1</strong> Object Oriented Design and Development & <strong>Block 2</strong> Data Structure and Algorithms</div>
+                <div class="module">Year 3: <strong>Block 2</strong> Big Data and Machine Learning & <strong>Block 4</strong> Functional Programming</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Sign-In</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>DE MONTFORT</h1>
+        </div>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Courses</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="undergraduate.html">Undergraduate</a></li>
+                        <li><a href="postgraduate.html">Postgraduate</a></li>
+                    </ul>
+                </li>
+                <li><a href="study.html">Study</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li class="dropdown">
+                    <a href="#">Sign In <i class="fas fa-user"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="admin login.html">Admin</a></li>
+                        <li><a href="faculty-signin.html">Staff</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="faculty-container">
+        <!-- Faculty Cards -->
+        <div class="faculty-card" onclick="showModules('faculty1')">
+            <img src="images/profile.png" alt="Syed Shah Ali">
+            <h3>Syed Shah Ali</h3>
+        </div>
+
+        <div class="faculty-card" onclick="showModules('faculty2')">
+            <img src="images/profile.png" alt="Sayed Ahmad">
+            <h3>Sayed Ahmad</h3>
+        </div>
+
+        <div class="faculty-card" onclick="showModules('faculty3')">
+            <img src="images/profile.png" alt="Atheer Al-Mousa">
+            <h3>Atheer Al-Mousa</h3>
+        </div>
+
+        <div class="faculty-card" onclick="showModules('faculty4')">
+            <img src="images/profile.png" alt="Sumaiya Thaseen">
+            <h3>Sumaiya Thaseen</h3>
+        </div>
+
+        <div class="faculty-card" onclick="showModules('faculty5')">
+            <img src="images/profile.png" alt="Muhammed Ghalib">
+            <h3>Muhammed Ghalib</h3>
+        </div>
+    </div>
+
+    <!-- Faculty Modules Section -->
+    <div class="faculty-modules" id="faculty-modules">
+        <!-- Content will be dynamically loaded here -->
+    </div>
+<script src="script.js"></script>
+    
+</body>
+</html>
